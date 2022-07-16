@@ -652,8 +652,8 @@ body {
     width: 49%;
 }
 @media (max-width:767px) {
-    .contact form .left,
-    .contact form .right {
+    .contact .left,
+    .contact .right {
         float:none;
         width: 100%;
     }
