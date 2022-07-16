@@ -196,8 +196,7 @@ ourGallery.forEach (img => {
             //create text for heading
             let imgText = document.createTextNode(img.alt);
             //create text for link
-            let linkText = document.createTextNode(img.dataset.link);
-
+            let linkText = document.createTextNode( img.dataset.name + img.dataset.link);
             //append the text to the heading
             imgHeading.appendChild(imgText);
             //append the heading to popup box
