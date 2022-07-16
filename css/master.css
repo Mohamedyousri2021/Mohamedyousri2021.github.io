@@ -134,7 +134,6 @@ body {
 }
 .nav-bullets .bullet.active {
     background-color: var(--main-color);
-    outline: 2px solid #fff ;
 }
 .nav-bullets .bullet .tooltip {
     background-color: var(--main-color);
