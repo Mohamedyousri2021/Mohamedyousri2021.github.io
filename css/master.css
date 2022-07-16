@@ -70,7 +70,7 @@ body {
     border-color: #fff;
 }
 .settings-box .option-box .colors-list li:first-child {
-    background-color: #ff9800;
+    background-color: #ec4d37;
 }
 .settings-box .option-box .colors-list li:nth-child(2) {
     background-color: #e91e63;
@@ -82,7 +82,7 @@ body {
     background-color: #03a964;
 }
 .settings-box .option-box .colors-list li:nth-child(5) {
-    background-color: #EC4D37;
+    background-color: #ff9800;
 }
 .settings-box .option-box .yes,
 .settings-box .option-box .no {
@@ -674,12 +674,6 @@ body {
 .contact .info i {
     padding: 10px;
 }
-.contact .info i.fa-envelope{
-    color: red;
-}
-.contact .info .envelope {
-    color: red;
-}
 .contact .info i.fa-linkedin {
     color: #0e76a8;
 }
@@ -691,6 +685,12 @@ body {
 }
 .contact .info .github {
     color: #183153;
+}
+.contact .info i.fa-envelope{
+   color:var(--main-color);
+}
+.contact .info .envelope {
+    color:var(--main-color);
 }
 /* end contact me */
 /* start footer */
