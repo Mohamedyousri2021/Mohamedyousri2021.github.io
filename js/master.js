@@ -165,7 +165,7 @@ function scrollFunction() {
 }
 
 //create popup with the image
-let myProjects = document.querySelectorAll('.projects img, .Mypic img');
+let myProjects = document.querySelectorAll('.projects img, .Mypic img, .certificates img');
 myProjects.forEach (img => {
     img.addEventListener('click', (e) => {
         //create overlay element

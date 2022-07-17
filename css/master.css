@@ -1,5 +1,5 @@
 :root {
-    --main-color: #ff9800;
+    --main-color: #ec4d37;
 }
 * {
     box-sizing: border-box;
@@ -430,16 +430,15 @@ body {
 }
 .projects .images-box img {
     width: 48%;
-    height: 300px;
     padding: 3px;
     background-color: #f6f6f6;
     border: 1px solid #ccc;
     margin: 5px;
     cursor: pointer;
 }
-@media (max-width:991px) {
-    .projects .images-box img {
-        height: auto;
+@media (max-width: 767px) {
+    .projects .images-box img  {
+        width: 90%;
     }
 }
 .popup-overlay {
@@ -608,6 +607,72 @@ body {
     top: 20px;
 }
 /* end timeline */
+/* start my certificates */
+.certificates {
+    position: relative;
+    padding: 60px 0;
+}
+.certificates::before {
+    content: '';
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--main-color);
+    height: 100%;
+
+}
+.certificates::after {
+    content: '';
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #333;
+    height: 100%;
+}
+.certificates h2 {
+    font-weight: bold;
+    font-size: 30px;
+    color: #333;
+    margin: 0 0 50px;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+.certificates h2 span {
+    color: var(--main-color);
+}
+.certificates .images-box {
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+.certificates .images-box img {
+    background-color: #f6f6f6;
+    cursor: pointer;
+    float: left;
+}
+.certificates .images-box .first-row {
+    width: 49%;
+    margin-bottom: 10px;
+    margin-right: .5%;
+    margin-left: .5%;
+}
+.certificates .images-box .second-row {
+    width: calc(98% / 3);
+    margin-bottom: 10px;
+    margin-right: calc(1% / 3);
+    margin-left: calc(1% / 3);
+}
+@media (max-width:767px) {
+    .certificates .images-box .first-row,
+    .certificates .images-box .second-row {
+        width: 95%;
+    }
+}
+/* end my certificates */
 
 /* start contact me */
 .contact {
