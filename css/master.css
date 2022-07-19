@@ -700,7 +700,7 @@ body {
     position: relative;
     z-index: 2;
 }
-.contact h2  {
+.contact h2 {
     font-weight: bold;
     font-size: 30px;
     color: var(--main-color);
@@ -710,7 +710,6 @@ body {
 .contact  .left {
     float: left;
     width: 49%;
-
 }
 .contact  .right {
     float: right;
@@ -738,9 +737,13 @@ body {
 }
 @media (max-width:420px) {
     .contact .info .info-box p {
-        font-size: 17px;
-    }
-    
+        font-size: 18px;
+    } 
+}
+@media (max-width:385px) {
+    .contact .info .info-box p {
+        font-size: 16px;
+    } 
 }
 .contact .info i {
     padding: 10px;
