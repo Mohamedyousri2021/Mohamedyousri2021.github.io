@@ -132,8 +132,7 @@ function scrollFunction() {
      let windowHeight = this.innerHeight;
      //window scroll top
      let windowScrollTop = this.scrollY; //this.pageYOffset is deprecated
-     // console.log(windowScrollTop)
-     if(windowScrollTop > (skillsOffsetTop + skillsHeight - windowHeight)) {
+     if(windowScrollTop > (skillsOffsetTop)) {
          let allSkills = document.querySelectorAll('.skill-box .skill-progress span');
          allSkills.forEach(skill => {
              skill.style.width = skill.dataset.progress;
