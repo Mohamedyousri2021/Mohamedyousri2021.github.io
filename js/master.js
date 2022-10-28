@@ -191,22 +191,15 @@ myProjects.forEach (img => {
         if(img.alt !== null) {
             //Create heading
             let imgHeading = document.createElement('h3');
-
-            //create text for heading
-            let imgText = document.createTextNode(img.alt);
-            //create text for link
-            let linkText = document.createTextNode( img.dataset.name + img.dataset.link);
-            //append the text to the heading
-            imgHeading.appendChild(imgText);
+            //create text link for heading
+            let linkText = document.createTextNode(img.alt);
+            //append the text to the link
+            tempLink.appendChild(linkText);
+            //append the link to the Heading
+            imgHeading.appendChild(tempLink);
             //append the heading to popup box
             popupBox.appendChild(imgHeading);
-
-             //appent the text to the link
-             tempLink.appendChild(linkText);
-             //append the link to the popupbox
-             popupBox.appendChild(tempLink);
         }
-
         //create the image
         let popupImage = document.createElement('img');
 
@@ -244,6 +237,9 @@ document.addEventListener('click', (e) => {
         //remove the current popup
         e.target.parentNode.remove();
         //remove the overlay
+        document.querySelector('.popup-overlay').remove();
+    } else if (e.target.className == 'popup-overlay') {
+        document.querySelector('.popup-box').remove();
         document.querySelector('.popup-overlay').remove();
     }
 })
