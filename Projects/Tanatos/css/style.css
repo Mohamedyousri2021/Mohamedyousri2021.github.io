@@ -106,8 +106,8 @@ button:hover {
 .header .arrow i {
   border:2px solid #7b7b7b;
   border-radius: 50%;
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   line-height:35px;
   cursor: pointer;
 }
