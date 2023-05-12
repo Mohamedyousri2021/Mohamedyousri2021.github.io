@@ -96,7 +96,7 @@ backgroundsEl.forEach (span => {
 const landingPage = document.querySelector('.landing-page');
 
 // create array of images
-let imgsArray = ['img6.jpg', 'img7.jpg', 'img8.jpg', 'img9.jpg', 'img10.jpg', 'img11.jpg'];
+let imgsArray = ['img6.jpg', 'img8.jpg', 'img10.jpg'];
 
 
 // function to randomize imgs
